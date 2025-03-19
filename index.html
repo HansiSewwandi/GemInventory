@@ -1,0 +1,102 @@
+
+<html>
+	<head>
+		<title>Easy Gemz</title>
+		<link rel="stylesheet" href="index.css">
+		<script>
+			function validateInputs() {
+				const email = document.getElementById("email").value;
+				const password = document.getElementById("password").value;
+				const loginButton = document.getElementById("btnLogin");
+		
+				//Enable or disable login button based on input
+				loginButton.disabled = email.trim() === "" || password.trim() === "";
+				
+			}	
+		
+		</script>
+		
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td style="width:50%">
+					<h5>Gem <font id ="font" color="blue">Business</font></h5>
+					<center>
+					<table>
+						<h1><font color = "blue">Sign In</font></h1>
+						<form name = "login" action="home.html">
+						
+							<tr>
+								<td>
+									<h5 align="justify"><font id = "font" color = "gray">Sign in with your login details that you entered during your <br>
+					                registration. </font></h5>
+					            </td>
+							</tr>
+							<tr>
+								<td><b>Email </b><font id = "font" color="red">*</font></td>
+							</tr>
+							<tr>
+								<td><input type="text" class="email" name = "txtEmail" oninput="validateInputs()" required></td>
+							</tr>
+							<tr>
+								<td><b>Password </b><font id = "font" color="red">*</font></td>
+							</tr>
+							<tr>
+								<td><input type="password" class="password" name = "txtPassword" oninput="validateInputs()" required></td>
+							</tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr>
+								<td>
+									<table>
+										<tr>
+											<td style="width:73%">
+												<font id = "font" size="2px"><input type="checkbox" class="checkbox">Remember me</font>
+											</td>
+											<td style="width:70%">
+												<font id = "font" size="2px"><a href="www.ebay.com">Forgot password</a></font>
+											</td>
+										</tr>
+									</table>
+							</tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr>
+								<!--if you want to disable login button just put "disabled" within button tag-->
+								<td><button id = "btnLogin"><b>Login</b></button></td>
+							</tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr></tr>
+							<tr>
+								<td><p align="center"><font id = "font" size = "2px">Don't have an account? <a href="signup.html">Sign Up</a></font></p></td>
+							</tr>
+						</table>
+					</form>
+					</center>
+				</td>
+				<td style="width:50%">
+					<div class="container">
+						<img src="C:\Users\ACER\OneDrive\Desktop\Project\Images\gem.jpg" alt="Gems" style="width:770px;height:682px;">
+  						<div class="centered"><b><font size = "12">Easy Gemz</font></b><br>Easy Gemz helps businessmen to manage organized and well secured business information with comprehensive set of features. Join us and start your journey today.</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+		
